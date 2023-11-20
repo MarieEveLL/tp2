@@ -10,7 +10,7 @@
 
 ## Use case
 
-![Alt text](URL_de_votre_image "Use Case")
+![Alt text](use_case.png "Use Case")
 
 
 ## Sequence diagram
