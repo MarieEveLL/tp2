@@ -11,6 +11,7 @@
 ## Use case
 
 ![Alt text](use_case.png "Use Case")
+![Alt text](use_case.final.png "Use Case")
 
 
 ## Sequence diagram
@@ -26,7 +27,16 @@ sequenceDiagram
     MOngoDB-->>-Back-end: livre ajouté
     Back-end-->>-Front-end: message livre ajouté
 ```
+```mermaid
+sequenceDiagram
+    Front-end->>+Back-end: saisir ISBN valide ou Titre
+    Back-end-->>-Front-end: livre prêt à être ajouté ou refusé si existant
 
+    Front-end->>+Back-end: saisir les infos du nouveau livre
+    Back-end->>+MOngoDB: POST ajouter un livre
+    MOngoDB-->>-Back-end: réponse de la base de données
+    Back-end-->>-Front-end: livre ajouté avec succès
+```
 ## Distribution des tâches
 
 | Responsable         | Tâche                                                                                                                      |
