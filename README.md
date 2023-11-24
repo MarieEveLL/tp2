@@ -1,4 +1,4 @@
-# tp2
+# tp2 par Flavio et Marie Eve
 ## Comment *changer* le système sans difficulté, sans avoir ~~besoin~~ de *comprendre* $e=mc^2$ ?
 
 ## Proposition pour changer le système:
@@ -10,23 +10,10 @@
 
 ## Use case
 
-![Alt text](use_case.png "Use Case")
 ![Alt text](use_case.final.png "Use Case")
 
 
 ## Sequence diagram
-```mermaid
-sequenceDiagram
-    Front-end->>+Back-end: saisir ISBN d'un livre
-    Back-end->>+MOngoDB: ajouter un livre
-    Back-end-->>-Front-end: message ISBN déjà existant
-
-    Front-end->>+Back-end: saisir TITRE d'un livre
-    Back-end->>+MOngoDB: ajouter un livre
-    
-    MOngoDB-->>-Back-end: livre ajouté
-    Back-end-->>-Front-end: message livre ajouté
-```
 ```mermaid
 sequenceDiagram
     Front-end->>+Back-end: saisir ISBN valide ou Titre
@@ -44,3 +31,4 @@ sequenceDiagram
 | Rédacteur technique | Mettre à jour la documentation pour refléter les changements dans le système.                                              |
 | Formateur           | Former les bibliothécaires à l'utilisation de la nouvelle interface.                                                       |
 | Développeur         | Déployer les mises à jour sur un serveur de test avant de les mettre en production pour assurer une transition en douceur. |
+
